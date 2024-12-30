@@ -1,4 +1,4 @@
-package repositories
+package main
 
 import "gorm.io/gorm"
 
