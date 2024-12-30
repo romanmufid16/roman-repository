@@ -104,7 +104,7 @@ func main() {
     db.AutoMigrate(&User{})
 
     // Membuat instance RomanRepository untuk model User
-    userRepo := repositories.NewRomanRepository[User](db)
+    userRepo := NewRomanRepository[User](db)
 
     // Menyimpan data user baru
     user := User{Name: "John", Email: "john@example.com"}
